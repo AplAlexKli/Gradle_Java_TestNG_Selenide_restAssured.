@@ -1,0 +1,28 @@
+group 'ui'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+compileJava.options.encoding = "UTF-8"
+compileTestJava.options.encoding = "UTF-8"
+
+repositories {
+    mavenCentral()
+
+}
+
+dependencies {
+    testImplementation 'org.testng:testng:6.9.10'
+    testImplementation 'com.codeborne:selenide:5.2.4'
+    testImplementation 'io.rest-assured:rest-assured:4.2.0'
+    testImplementation 'io.rest-assured:json-schema-validator:4.2.0'
+
+    testImplementation "com.github.tomakehurst:wiremock-jre8:2.26.0"
+}
+
+test {
+    useTestNG()
+}
+

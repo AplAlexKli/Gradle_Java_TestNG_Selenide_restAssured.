@@ -1,0 +1,14 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/wiremock"
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "UsersStubBody.json",
+    "headers" : {
+      "Content-Type" : "application/json;charset=UTF-8"
+    }
+  }
+}
+
